@@ -5,6 +5,8 @@ import './App.css'
 import Navbar from './components/navbar'
 import TopBanner from './components/top_banner'
 import ContentFrame from './components/contentFrame'
+import Login from './components/login'
+import Register from './components/register'
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
         <Navbar/>
         <TopBanner/>
         <ContentFrame/>
+        <Register/>
      </div>
     </>
   )
