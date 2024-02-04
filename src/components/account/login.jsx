@@ -25,7 +25,10 @@ export default function Login() {
             body: JSON.stringify({user:userData})
         })
         .then((res) => res.json())
-        .then(data => console.log(data))
+        .then(data => {
+            localStorage.setItem('token', data.token)
+        })
+        .catch((error) => console.log(error))
     }
 
     return(
