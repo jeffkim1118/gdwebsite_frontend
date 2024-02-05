@@ -10,7 +10,7 @@ export default function Recover() {
     return(
         <div>
             <form onSubmit={handleRecover}>
-                <input type="text" name='email' onChange={(e) => setUserEmail(e.target.value)}></input>
+                <input type="email" name='email' onChange={(e) => setUserEmail(e.target.value)}></input>
                 <button type="submit">Submit</button>
             </form>
         </div>

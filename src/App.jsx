@@ -45,7 +45,7 @@ function App() {
         
         <Routes>
           <Route path='*' element={<ErrorPage/>}></Route>
-          <Route path='/' element={<Homepage/>}></Route>
+          <Route exact path='/' element={<Homepage/>}></Route>
           <Route path='/login' element={<LoginPage/>}></Route>
           <Route path='/register' element={<RegisterPage/>}></Route>
           <Route path='/recover' element={<RecoverPage/>}></Route>
