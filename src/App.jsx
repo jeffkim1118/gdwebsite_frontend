@@ -13,6 +13,7 @@ import Homepage from './components/homepage'
 import LoginPage from './components/account/loginPage'
 import RegisterPage from './components/account/registerPage'
 import ErrorPage from './components/errorPage'
+import RecoverPage from './components/account/recoverPage'
 
 function App() {
   const [currentUser, setCurrentUser] = useState()
@@ -47,7 +48,7 @@ function App() {
           <Route path='/' element={<Homepage/>}></Route>
           <Route path='/login' element={<LoginPage/>}></Route>
           <Route path='/register' element={<RegisterPage/>}></Route>
-         
+          <Route path='/recover' element={<RecoverPage/>}></Route>
         </Routes>
      </div>
     </>

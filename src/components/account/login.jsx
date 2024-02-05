@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Login() {
 
@@ -32,11 +33,15 @@ export default function Login() {
     }
 
     return(
-        <div>
-            <form>
+        <div className="login">
+            <form className="login-form">
+                <h1>Login</h1>
+                <label>Username</label>
                 <input type="input" name="username" value={userData.username} onChange={handleChange}></input>
-                <input type="input" name="password" value={userData.password} onChange={handleChange}></input>
+                <label>Password</label>
+                <input type="password" name="password" value={userData.password} onChange={handleChange}></input>
                 <button onClick={(e) => handleSubmit(e)}>Login</button>
+                <Link to='/recover'>Forgot your password?</Link>
             </form>
         </div>
     )
