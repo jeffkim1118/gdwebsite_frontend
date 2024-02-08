@@ -82,8 +82,8 @@ nav input{
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   z-index: 1;
-  background-color: rgba(169, 117, 253, 0.24);
-  color: rgba(0, 0, 0, 0.541);
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.945);
   padding: 100px 20px 100px 20px;
   box-shadow: 13px 10px 1px #080808;
   border-radius: 10px;
@@ -102,6 +102,7 @@ nav input{
   height: 28px;
   margin: 10px;
   border-radius: 5px;
+  padding: 6px;
 }
 .login-form button{
   height: 30px;
@@ -144,6 +145,7 @@ nav input{
   border: none;
   height: 28px;
   margin: 10px;
+  padding: 7px;
 }
 
 .register-form button{
@@ -153,4 +155,7 @@ nav input{
   font-size: 15px;
   color: rgb(202, 202, 202);
   background-color: rgb(26, 26, 26);
+}
+
+.footer-container{
 }

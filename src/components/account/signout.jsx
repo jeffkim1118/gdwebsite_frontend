@@ -12,7 +12,7 @@ export default function SignOut(){
     
     return(
         <div>
-            <button onClick={(e)=>{handleSignOut(e)}}>Sign Out</button>
+            <button className='btn' onClick={(e)=>{handleSignOut(e)}}>Sign Out</button>
         </div>
     )
 }

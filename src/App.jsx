@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/navbar'
-
 import Login from './components/account/login'
 import Register from './components/account/register'
 import { jwtDecode } from 'jwt-decode'
@@ -14,6 +13,7 @@ import LoginPage from './components/account/loginPage'
 import RegisterPage from './components/account/registerPage'
 import ErrorPage from './components/errorPage'
 import RecoverPage from './components/account/recoverPage'
+import Footer from './components/footer'
 
 function App() {
   const [currentUser, setCurrentUser] = useState()
@@ -42,6 +42,7 @@ function App() {
     <>
      <div>
         <Navbar/>
+        <Footer/>
         
         <Routes>
           <Route path='*' element={<ErrorPage/>}></Route>

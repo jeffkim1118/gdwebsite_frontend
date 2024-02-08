@@ -35,11 +35,9 @@ export default function Login() {
     return(
         <div className="login">
             <form className="login-form">
-                <h1>Login</h1>
-                <label>Username</label>
-                <input type="input" name="username" value={userData.username} onChange={handleChange}></input>
-                <label>Password</label>
-                <input type="password" name="password" value={userData.password} onChange={handleChange}></input>
+                <h1>Login</h1>            
+                <input type="input" name="username" value={userData.username} onChange={handleChange} placeholder="Username"></input>
+                <input type="password" name="password" value={userData.password} onChange={handleChange} placeholder="Password"></input>
                 <button onClick={(e) => handleSubmit(e)}>Login</button>
                 <Link to='/recover'>Forgot your password?</Link>
             </form>
