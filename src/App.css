@@ -6,21 +6,21 @@
   margin:0;
 }
 
-nav{
+.navigation-bar{
   width: 100%;
   position: fixed;
   background-color: #282C35;
   z-index: 1;
 }
 
-nav a{
+.navigation-bar a{
  margin: 10px;
  text-decoration: none;
  color: whitesmoke;
  font-family: 'Lato', sans-serif;;
 }
 
-nav input{
+.navigation-bar input{
   margin: 10px;
 }
 
@@ -157,5 +157,7 @@ nav input{
   background-color: rgb(26, 26, 26);
 }
 
-.footer-container{
+.footer{
+  position: absolute;
+  bottom: 0;
 }

@@ -5,7 +5,7 @@ export default function Navbar(){
 
     return(
         <div>
-            <nav>
+            <nav className="navigation-bar">
                 <a href="/">GD</a>
                 <a href="#">Deals</a>
                 <a href="#">News</a>
