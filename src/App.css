@@ -8,30 +8,11 @@
 
 html{
   width: 100%;
+}
+
+.home{
   height: 100%;
 }
-/* .navigation-bar{
-  width: 100%;
-  position: fixed;
-  background-color: #282C35;
-  z-index: 1;
-} */
-
-/* .navigation-bar a{
- margin: 10px;
- text-decoration: none;
- color: whitesmoke;
- font-family: 'Lato', sans-serif;;
-} */
-
-/* .navigation-bar input{
-  margin: 10px;
-} */
-
-/* .outnow-tag{
-  position: absolute;
-  z-index: 1;
-} */
 
 .content-frame{
   width: 70%;
@@ -150,4 +131,16 @@ html{
 .footer{
   position: absolute;
   bottom: 0;
+}
+
+.deal-container{
+  display: flex;
+  justify-content: center;
+}
+
+.deal-box{
+  margin: 5px;
+  width: 200px;
+  height: 250px;
+  background-color: #515357;
 }

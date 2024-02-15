@@ -2,10 +2,9 @@ import TopBanner from './top_banner'
 import ContentFrame from './contentFrame'
 export default function Homepage(){
     return(
-        <div>
+        <div className='home'>
             <TopBanner/>
             <ContentFrame/>
-            <h1>Homepage</h1>
         </div>
     )
 }

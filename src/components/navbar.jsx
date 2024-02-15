@@ -3,9 +3,9 @@ import SignOut from "./account/signout";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100 fixed">
-      <a className="btn btn-ghost text-xl" href="/">GD</a>
-      <div>
+    <div className="navigation-bar navbar fixed">
+      <a className="btn btn-circle text-xl" href="/">GD</a>
+      <div className="w-full ml-10">
         <a className="btn btn-ghost" href="/">First</a>
         <a className="btn btn-ghost" href="/login">Login</a>
         <a className="btn btn-ghost" href="/register">Register</a>
