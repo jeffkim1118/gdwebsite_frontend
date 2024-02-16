@@ -5,7 +5,7 @@ import './App.css'
 import Navbar from './components/navbar'
 import Login from './components/account/login'
 import Register from './components/account/register'
-import { jwtDecode } from 'jwt-decode'
+import { jwtDecode } from 'jwt-decode';
 import SignOut from './components/account/signout'
 import { Route, Routes } from 'react-router-dom'
 import Homepage from './components/homepage'
@@ -42,7 +42,7 @@ function App() {
     <>
      <div>
         <Navbar/>
-        <Footer/>
+        {/* <Footer/> */}
         
         <Routes>
           <Route path='*' element={<ErrorPage/>}></Route>

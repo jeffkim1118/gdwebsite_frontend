@@ -3,7 +3,7 @@ export default function BestDeals(){
         1,2,3,4,5,6,7,8,9,10
     ]
     return(
-        <div>
+        <div className="best-deals">
             <ul>
                 {deals.map((deal) => {
                     return <div>

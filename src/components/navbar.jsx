@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import SignOut from "./account/signout";
+import { useDispatch, useSelector } from 'react-redux';
+import {logout, selectUser} from '../features/userSlice';
 
 export default function Navbar() {
+  const user = useSelector(selectUser);
   return (
     <div className="navigation-bar navbar fixed">
       <a className="btn btn-circle text-xl" href="/">GD</a>
@@ -9,18 +12,8 @@ export default function Navbar() {
         <a className="btn btn-ghost" href="/">First</a>
         <a className="btn btn-ghost" href="/login">Login</a>
         <a className="btn btn-ghost" href="/register">Register</a>
+        {user ? <SignOut/>: null}
       </div>
-
-      {/* <nav className="navigation-bar">
-                <a href="/">GD</a>
-                <a href="#">Deals</a>
-                <a href="#">News</a>
-                <a href="#">Games</a>
-                <input type="text"></input>
-                <a href="/login">Login</a>
-                <a href="/register">Register</a>
-                <SignOut/>
-            </nav> */}
     </div>
   );
 }

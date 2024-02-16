@@ -128,11 +128,6 @@ html{
   background-color: rgb(26, 26, 26);
 }
 
-.footer{
-  position: absolute;
-  bottom: 0;
-}
-
 .deal-container{
   display: flex;
   justify-content: center;
@@ -142,5 +137,10 @@ html{
   margin: 5px;
   width: 200px;
   height: 250px;
+  background-color: #515357;
+}
+
+.best-deals{
+  width:500px;
   background-color: #515357;
 }
